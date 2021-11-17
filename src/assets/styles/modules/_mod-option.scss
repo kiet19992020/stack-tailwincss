@@ -48,4 +48,10 @@
   .btn {
     @apply mb-12;
   }
+  .title-text {
+    @apply lg:max-w-500 md:max-w-400 mt-8 md:mt-0 md:w-full;
+  }
+  .name-text {
+    @apply hidden lg:max-w-180 lg:w-full lg:block;
+  }
 }

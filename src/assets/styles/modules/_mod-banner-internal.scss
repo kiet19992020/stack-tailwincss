@@ -21,7 +21,7 @@
   }
   img {
     @apply w-100p h-[300px] relative z-9999;
-    @apply lg:max-w-440 lg:-mt-50 2xl:ml-50;
+    @apply lg:max-w-440 md:h-auto lg:-mt-50 2xl:ml-50;
   }
   h1 {
     @apply text-white;
