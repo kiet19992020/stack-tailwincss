@@ -10,7 +10,10 @@ const init = () => {
   // })
 
   var content = $('.option-desc')
-
+  $('.item-button').on('click', function(e) {
+    $('.item-button').removeClass('active')
+    $(this).addClass('active')
+  })
   $('.btn-toggle').on('click', function(e) {
     content.slideUp()
 

@@ -1,13 +1,18 @@
 .mod-option {
   @apply relative z-1  pt-21 md:mt-35;
+
   .line-border {
     @apply after:absolute after:z-2 after:-right-100vw after:-left-100vw after:h-[1px] after:bg-blue-100;
   }
   .btn-toggle {
     @apply transition duration-300 ease-in-out;
   }
+  .icomoon {
+    @apply text-5xl;
+  }
 }
 .option-header {
+  @apply mb-13;
   .option-button {
     @apply flex;
   }
@@ -18,19 +23,26 @@
     }
   }
 
+  .option-title {
+    @apply lg:py-13;
+  }
 }
 .option-main {
   @apply md:pt-35;
 }
 .option-items {
-  @apply py-11 md:relative;
-  &:not(:last-child) {
-    @apply after:mt-12 after:absolute after:z-2 after:right-0p after:w-100p after:left-0p after:h-[1px] after:bg-blue-100;
-  }
+  @apply md:relative z-2;
+
+  @apply after:absolute after:z-3 after:right-0p after:w-100p after:left-0p after:h-[1px] after:bg-blue-100;
+
   &-title {
-    @apply flex justify-between items-center;
+    @apply flex justify-between items-center mt-14;
+    @apply lg:py-24 lg:mt-0;
   }
   .option-desc {
     @apply font-sans text-base leading-snug tracking-sp6 text-blue-400;
+  }
+  .btn {
+    @apply mb-12;
   }
 }

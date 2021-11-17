@@ -1,6 +1,7 @@
 .mod-form {
   background-image: url('../../../assets/images/bk-CTA.png');
   @apply bg-blue-400;
+  @apply lg:mt-63;
   &-inner {
     @apply py-60 relative z-1;
     @apply md:flex md:items-center;

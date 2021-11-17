@@ -27,10 +27,9 @@
   @apply lg:mt-0;
   .menu-tiems {
     @apply py-10;
-    @apply lg:px-29 md:py-0;
+    @apply lg:py-0 2xl:px-29 xl:px-10 lg:px-8 md:px-5;
     > a {
       @apply text-sm font-body font-medium uppercase;
-      // @apply lg:py-29;
     }
     &:not(:nth-last-child(2))
     {

@@ -2,12 +2,12 @@
   @apply bg-blue-500 md:pt-25;
   &-logo {
     @apply bg-white p-15 mx-auto;
-    @apply md:bg-transparent md:p-0;
+    @apply md:bg-transparent md:p-0 md:my-10;
   }
 
   &-inner {
     @apply text-center flex flex-col justify-center;
-    @apply md:flex-row md:justify-between;
+    @apply md:flex-row 2xl:justify-between 2xl:flex-nowrap md:flex-wrap md:justify-center;
   }
   &-social {
     @apply text-white;
@@ -26,12 +26,11 @@
 
 .footer-menu {
   &-list {
-    @apply md:flex;
+    @apply md:flex md:justify-center;
   }
   &-items {
-
     @apply text-base font-medium py-5 text-center uppercase;
-    @apply md:px-20 md:py-0 md:text-left;
+    @apply 2xl:px-20 lg:px-10 md:px-5 md:py-0 md:text-left;
     a {
       @apply text-blue-200;
     }
