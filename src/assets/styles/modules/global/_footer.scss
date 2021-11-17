@@ -1,0 +1,46 @@
+.footer {
+  @apply bg-blue-500 md:pt-25;
+  &-logo {
+    @apply bg-white p-15 mx-auto;
+    @apply md:bg-transparent md:p-0;
+  }
+
+  &-inner {
+    @apply text-center flex flex-col justify-center;
+    @apply md:flex-row md:justify-between;
+  }
+  &-social {
+    @apply text-white;
+  }
+  &-sumbit {
+    // @apply w-full;mb
+    .btn {
+      @apply w-full my-5;
+      @apply md:w-100;
+    }
+    .btn-primary {
+      @apply md:hidden;
+    }
+  }
+}
+
+.footer-menu {
+  &-list {
+    @apply md:flex;
+  }
+  &-items {
+
+    @apply text-base font-medium py-5 text-center uppercase;
+    @apply md:px-20 md:py-0 md:text-left;
+    a {
+      @apply text-blue-200;
+    }
+  }
+  .menu-detial {
+    @apply text-left;
+    > li {
+      @apply hidden;
+      @apply md:text-white md:block md:font-body md:text-xs md:tracking-sp5 md:font-normal md:py-4;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.mod-benefit {
+  background-image: url('../../../assets/images/bk-CTA.png');
+  @apply w-100p py-20 relative z-0 bg-blue-100 h-auto bg-cover bg-no-repeat lg:py-50;
+  &::after {
+    content: '';
+    @apply absolute left-0 z-a-1 bottom-0 h-full opacity-50 w-full;
+    background-image: linear-gradient(to top, #0a2035 43%, #1c467f 151%);
+  }
+  .benefit-title {
+    @apply after:absolute after:w-50 after:bg-blue-100 after:h-[1px] uppercase;
+    @apply lg:mt-50;
+  }
+
+}
+
+.benefit-content {
+  @apply md:flex md:py-25 md:justify-between md:items-center text-white;
+
+  &-items {
+    @apply mt-20;
+  }
+
+  .content-text {
+    @apply font-sans w-100p leading-normal tracking-sp6 font-semibold;
+    @apply lg:max-w-340 lg:block;
+  }
+}

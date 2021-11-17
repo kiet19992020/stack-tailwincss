@@ -1,0 +1,53 @@
+.hamburger-menu {
+  @apply p-0 mt-0 cursor-pointer;
+  .icon-bar {
+    @apply block bg-blue-100 relative ml-auto w-17 h-2;
+
+    +.icon-bar {
+      @apply mt-3;
+    }
+  }
+
+  .icomoon {
+    @apply hidden text-3xl leading-none;
+  }
+
+  &.is-open-menu {
+    .icomoon {
+      @apply block;
+    }
+
+    .icon-bar {
+      @apply hidden;
+    }
+  }
+}
+.main-menu-ul {
+  @apply pl-0 lg:flex lg:items-center list-none mt-25;
+  @apply lg:mt-0;
+  .menu-tiems {
+    @apply py-10;
+    @apply lg:px-29 md:py-0;
+    > a {
+      @apply text-sm font-body font-medium uppercase;
+      // @apply lg:py-29;
+    }
+    &:not(:nth-last-child(2))
+    {
+      @apply lg:border-r-2 lg:border-blue-100;
+    }
+  }
+}
+@screen down_lg {
+  .main-menu {
+    @apply max-h-0 invisible overflow-hidden duration-300 block w-full;
+    &.is-open-menu {
+      @apply max-h-2k visible duration-1000;
+    }
+  }
+  .is-open-child {
+    .dropdown-menu {
+      @apply block;
+    }
+  }
+}

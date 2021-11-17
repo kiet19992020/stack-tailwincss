@@ -1,0 +1,95 @@
+@layer base {
+  body {
+    @apply text-base text-blue-100 font-normal font-sans relative;
+    @apply lg:text-lg;
+  }
+
+  html{
+    @apply bg-white;
+  }
+
+  html,
+  body{
+    @apply overflow-x-hidden m-0 font-body;
+  }
+
+  h1,
+  .h1 {
+    @apply text-h1 font-light tracking-sp1 text-white font-body uppercase;
+    @apply md:text-h1-md md:text-blue-400;
+  }
+
+  h2,
+  .h2 {
+    @apply text-h2 font-semibold tracking-sp2 text-blue-200 font-body;
+    @apply md:text-h2-md;
+  }
+
+  h3,
+  .h3 {
+    @apply text-h3 font-semibold tracking-sp4 text-blue-400 font-body;
+    @apply md:text-h3-md;
+  }
+
+  h4,
+  .h4 {
+    @apply text-h4 font-semibold tracking-sp6 font-body;
+    @apply md:text-h4-md md:font-normal;
+  }
+
+  h5,
+  .h5 {
+    @apply text-h5 font-normal font-body;
+    @apply md:text-h5-md;
+  }
+
+  h6,
+  .h6 {
+    @apply text-h6 font-normal tracking-sp5 text-blue-100 font-body;
+    @apply md:text-h6-md;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    @apply mb-8;
+  }
+
+  a {
+    // @apply text-blue-100 hover:text-blue-400;
+  }
+
+  p,
+  li,
+  div{
+    @apply tracking-sp6;
+  }
+
+  p,
+  li,
+  ol,
+  ul,
+  blockquote,
+  figure{
+    // margin: 0 0 15px;
+  }
+
+  ol,
+  ul{
+    @apply block list-none;
+  }
+
+  ol{
+    @apply list-decimal;
+  }
+
+  ul{
+    @apply list-disc;
+  }
+  li {
+    @apply list-none;
+  }
+}
