@@ -8,7 +8,7 @@
     @apply transition duration-300 ease-in-out;
   }
   .icomoon {
-    @apply text-5xl;
+    @apply text-2xl;
   }
 }
 .option-header {
@@ -17,7 +17,8 @@
     @apply flex;
   }
   .item-button {
-    @apply border-1 cursor-pointer border-blue-100 px-10 py-8 text-xs font-semibold font-body bg-transparent;
+    @apply p-5;
+    @apply border-1 cursor-pointer border-blue-100 lg:px-10 lg:py-8 text-xs font-semibold font-body bg-transparent;
     &.active {
       @apply bg-blue-100 text-blue-50;
     }
@@ -40,7 +41,9 @@
     @apply lg:py-24 lg:mt-0;
   }
   .option-desc {
+    @apply lg:max-w-[800px] lg:w-full;
     @apply font-sans text-base leading-snug tracking-sp6 text-blue-400;
+
   }
   .btn {
     @apply mb-12;

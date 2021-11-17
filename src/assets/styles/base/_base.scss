@@ -21,19 +21,19 @@
 
   h2,
   .h2 {
-    @apply text-h2 font-semibold tracking-sp2 text-blue-200 font-body;
+    @apply text-h2 font-semibold tracking-sp2 text-blue-100 font-body;
     @apply md:text-h2-md;
   }
 
   h3,
   .h3 {
-    @apply text-h3 font-semibold tracking-sp4 text-blue-400 font-body;
+    @apply text-h3 font-semibold leading-tight tracking-sp4 text-blue-400 font-body;
     @apply md:text-h3-md;
   }
 
   h4,
   .h4 {
-    @apply text-h4 font-semibold tracking-sp6 font-body;
+    @apply text-h4 font-normal tracking-sp6 font-body;
     @apply md:text-h4-md md:font-normal;
   }
 

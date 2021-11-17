@@ -19,12 +19,12 @@
     &:not(:last-child) {
       @apply md:pr-10;
     }
-    @apply mt-20 ;
+    @apply mt-20;
 
   }
 
   .content-text {
-    @apply font-sans w-100p leading-normal tracking-sp6 font-semibold;
+    @apply font-sans w-100p leading-6 tracking-sp6 font-semibold;
     @apply lg:max-w-340 lg:block;
   }
 }

@@ -1,6 +1,6 @@
 @layer components {
   .btn{
-    @apply px-10 py-8 font-semibold inline-block text-btn text-center font-body uppercase tracking-sp7 select-none align-middle border-1 transition;
+    @apply px-13 py-5 font-semibold inline-block text-btn text-center font-body uppercase tracking-sp7 select-none align-middle border-1 transition;
 
     &-primary {
       @apply bg-blue-100 text-white border-blue-100;

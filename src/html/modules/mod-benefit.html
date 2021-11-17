@@ -1,19 +1,18 @@
 <section class="mod-benefit">
-  <div class="container  pl-25 pr-16">
+  <div class="container  px-26">
     <div class="benefit-title text-white">
       <h4>BENEFITS OF WORKING AT STACK</h4>
     </div>
     <div class="benefit-content ">
-      {% for i in [1, 2, 3] %}
+
+      {% for benefit in benefits %}
       <div class="benefit-content-items">
           <div class="content-title">
-              <h2>Great work-life balance</h2>
+              <h2>{{ benefit.title }}</h2>
           </div>
           <div class="content-text">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                {{benefit.desc}}
               </p>
           </div>
       </div>

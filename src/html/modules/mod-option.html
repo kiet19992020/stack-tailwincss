@@ -11,65 +11,42 @@
     </div>
     <div class="line-border"></div>
     <div class="option-main">
-        <div class="option-items">
-            <div class="option-items-title">
-              <div class="md:max-w-600 md:w-full">
-                <h3>Critical Operations Technician</h3>
-              </div>
-                <div class="hidden md:block">
-                  <h5>CHICAGO</h5>
-                </div>
-                <button class="btn-toggle transform rotate-180" type="button">
-                  <i class="icomoon icon-arrow_drop_down"></i>
-                </button>
-                <div class="hidden md:block">
-                  <button class="btn btn-outline-primary">aplly now</button>
-                </div>
-            </div>
-            <div class="md:hidden block">
-              <h5>CHICAGO</h5>
-            </div>
-            <div class="option-desc">
-                <p>STACK is looking for a Critical Operations Technician (COT) to support a local data center campus.
-                  As a member of STACK’s Critical Operations team, the COT must possess strong knowledge of maintaining the mechanical, electrical, fire life safety, base building and other various internal data center systems. The COT will also be focused on the execution of programs related to Safety, Team, Availability, Communication and Knowledge.
-                  The COT will be responsible for day-to-day operations of the data center.</p>
-                  <div class="my-10">
-                      <button class="btn-border-left">VIEW FULL DESCRIPTION</button>
-                  </div>
-                </div>
-                <div class="md:hidden">
-                  <button class="btn btn-outline-primary w-100p">APPLY NOW</button>
-                </div>
-        </div>
-        {% for i in [1, 2, 3,4] %}
+        {% for option in options %}
         <div class="option-items">
           <div class="option-items-title">
-            <div class="md:max-w-600 md:w-full">
-              <h3>Assistant Critical Operations Manager</h3>
+            <div class="lg:max-w-500 md:max-w-400  md:w-full">
+              <h3>{{ option.title }}</h3>
             </div>
-              <div class="hidden md:block">
-                <h5>CHICAGO</h5>
+              <div class="hidden lg:max-w-180 lg:w-full lg:block">
+                <h5>{{ option.name }}</h5>
               </div>
               <button class="btn-toggle" type="button">
                 <i class="icomoon icon-arrow_drop_down"></i>
               </button>
-              <div class="hidden md:block">
+              <div class="hidden lg:block">
                 <button class="btn btn-outline-primary">aplly now</button>
               </div>
           </div>
-          <div class="md:hidden block">
-            <h5>CHICAGO</h5>
+          <div class="lg:hidden block">
+            <h5>{{ option.name }}</h5>
           </div>
+          {% if loop.first %}
+              <div class="option-desc">
+                  <p>{{ option.desc }}</p>
+                    <div class="my-10">
+                      <button class="btn-border-left">VIEW FULL DESCRIPTION</button>
+                  </div>
+                </div>
+          {% else %}
           <div class="option-desc hidden">
-              <p>STACK is looking for a Critical Operations Technician (COT) to support a local data center campus.
-                As a member of STACK’s Critical Operations team, the COT must possess strong knowledge of maintaining the mechanical, electrical, fire life safety, base building and other various internal data center systems. The COT will also be focused on the execution of programs related to Safety, Team, Availability, Communication and Knowledge.
-                The COT will be responsible for day-to-day operations of the data center.</p>
-                <div class="my-10">
-                  <button class="btn-border-left">VIEW FULL DESCRIPTION</button>
-              </div>
+            <p>{{ option.desc }}</p>
+              <div class="my-10">
+                <button class="btn-border-left">VIEW FULL DESCRIPTION</button>
             </div>
-            <div class="md:hidden">
-              <button class="btn btn-outline-primary w-100p">APPLY NOW</button>
+          </div>
+          {% endif %}
+            <div class="lg:hidden">
+              <button class="btn btn-outline-primary  md:w-50p w-full">APPLY NOW</button>
             </div>
         </div>
         {%endfor%}

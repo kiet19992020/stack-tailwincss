@@ -3,8 +3,8 @@
   @apply bg-blue-400;
   @apply lg:mt-63;
   &-inner {
-    @apply py-60 relative z-1;
-    @apply md:flex md:items-center;
+    @apply py-60 relative z-1 justify-center;
+    @apply md:flex md:items-center lg:justify-start;
   }
   @apply w-100p bg-cover bg-no-repeat h-auto bg-center;
   @apply md:flex;
@@ -13,7 +13,7 @@
   }
 }
 .form-left {
-  @apply relative z-1 md:w-50p md:pr-60 py-20;
+  @apply relative z-1 md:w-50p lg:pr-60 md:pr-18 py-20;
   @apply md:after:absolute after:z-2 after:top-0p after:right-0p after:w-[1px] after:h-100p after:bg-white;
   @apply md:before:w-0 before:absolute before:z-2 before:bottom-0 before:right-0p before:w-full before:h-[1px] before:bg-blue-100;
 

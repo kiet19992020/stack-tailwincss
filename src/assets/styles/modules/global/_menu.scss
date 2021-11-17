@@ -7,27 +7,25 @@
       @apply mt-3;
     }
   }
-
-  .icomoon {
-    @apply hidden text-3xl leading-none;
-  }
-
   &.is-open-menu {
     .icomoon {
       @apply block;
     }
-
     .icon-bar {
       @apply hidden;
     }
   }
 }
 .main-menu-ul {
+  .icomoon {
+    @apply text-2xl leading-none;
+    font-size: 12px
+  }
   @apply pl-0 lg:flex lg:items-center list-none mt-25;
   @apply lg:mt-0;
   .menu-tiems {
     @apply py-10;
-    @apply lg:py-0 2xl:px-29 xl:px-10 lg:px-8 md:px-5;
+    @apply lg:py-0 2xl:px-22 xl:px-10 lg:px-8 md:px-5;
     > a {
       @apply text-sm font-body font-medium uppercase;
     }
