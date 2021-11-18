@@ -22,30 +22,30 @@
   h2,
   .h2 {
     @apply text-h2 font-semibold tracking-sp2 text-blue-100 font-body;
-    @apply md:text-h2-md;
+    @apply md:text-h2-md md:tracking-sp4 md:leading-tight100;
   }
 
   h3,
   .h3 {
-    @apply text-h3 font-semibold leading-tight tracking-sp4 text-blue-400 font-body;
+    @apply text-h3 font-semibold leading-tight tracking-sp8 text-blue-400 font-body;
     @apply md:text-h3-md;
   }
 
   h4,
   .h4 {
-    @apply text-h4 font-normal tracking-sp6 font-body;
+    @apply text-h4 font-normal tracking-normal font-body;
     @apply md:text-h4-md md:font-normal;
   }
 
   h5,
   .h5 {
-    @apply text-h5 font-normal font-body;
+    @apply text-h5 font-normal font-body text-blue-300;
     @apply md:text-h5-md;
   }
 
   h6,
   .h6 {
-    @apply text-h6 font-normal tracking-sp5 text-blue-100 font-body;
+    @apply text-h6 font-normal tracking-normal text-blue-400 font-body;
     @apply md:text-h6-md;
   }
 

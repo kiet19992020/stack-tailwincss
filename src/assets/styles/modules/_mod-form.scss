@@ -3,41 +3,55 @@
   @apply bg-blue-400;
   @apply lg:mt-63;
   &-inner {
-    @apply py-60 relative z-1 justify-center;
-    @apply md:flex md:items-center lg:justify-start;
+    @apply py-17 pl-19 pr-22 relative z-1 justify-center;
+    @apply md:flex md:items-center lg:justify-start lg:pl-54 lg:py-70;
   }
   @apply w-100p bg-cover bg-no-repeat h-auto bg-center;
   @apply md:flex;
   h2 {
-    @apply text-white;
+    @apply text-white font-light;
+    line-height: 1.14;
+    letter-spacing: .61px;
+    @apply md:leading-tight100 md:tracking-sp4;
   }
 }
 .form-left {
-  @apply relative z-1 md:w-50p lg:pr-60 md:pr-18 py-20;
-  @apply md:after:absolute after:z-2 after:top-0p after:right-0p after:w-[1px] after:h-100p after:bg-white;
-  @apply md:before:w-0 before:absolute before:z-2 before:bottom-0 before:right-0p before:w-full before:h-[1px] before:bg-blue-100;
-
+  @apply relative z-1 md:w-50p md:pr-18 pb-3 pt-20;
+  @apply lg:pr-45 lg:pt-0;
+  &::after {
+    content: '';
+    @apply md:absolute z-2 top-0p right-12 w-[1px] h-100p bg-white;
+  }
+  &::before {
+    content: '';
+    @apply md:w-0 absolute z-2 bottom-0 right-0p w-full h-[1px] bg-blue-100;
+  }
+  &-text {
+    @apply mb-11 md:max-w-460;
+  }
   &-input {
     @apply md:flex md:items-center;
   }
   .form-input {
+    font-size: 13px;
+    letter-spacing: .16px;
     @apply placeholder-white;
     @apply outline-none bg-transparent text-white border-white inline-block;
   }
   .form-boder-bottom {
-    @apply w-full py-7 border-b-1;
-    @apply md:mr-10 md:mt-15;
+    @apply w-full py-5 border-b-1;
+    @apply md:mr-16 md:mt-15 md:text-xs md:pb-7;
   }
   .form-border-left {
-    @apply mt-7 px-10 border-l-1 hidden;
-    @apply md:block;
+    @apply px-10 border-l-1 hidden;
+    @apply md:block md:mt-34 lg:pl-5  md:text-base md:tracking-sp10 md:font-semibold;
   }
   .btn {
     @apply my-20;
   }
 }
 .form-right {
-  @apply md:pl-33;
+  @apply md:pl-20;
   &-text {
     @apply mt-18;
     h2 {
@@ -47,6 +61,10 @@
     @apply uppercase leading-snug tracking-sp4 font-normal max-w-280 w-full;
   }
   &-input {
-    @apply md:pt-20;
+    @apply lg:my-28;
+  }
+  .btn {
+    min-width: 362px;
+    @apply md:pt-10;
   }
 }

@@ -1,30 +1,35 @@
 .mod-benefit {
   background-image: url('../../../assets/images/bk-CTA.png');
-  @apply w-100p py-20 relative z-0 bg-blue-100 h-auto bg-cover bg-no-repeat lg:py-50;
+  @apply w-100p py-28 relative z-0 bg-blue-100 h-auto bg-cover bg-no-repeat lg:pb-40 lg:pt-100;
   &::after {
     content: '';
     @apply absolute left-0 z-a-1 bottom-0 h-full opacity-50 w-full;
     background-image: linear-gradient(to top, #0a2035 43%, #1c467f 151%);
   }
   .benefit-title {
-    @apply after:absolute after:w-50 after:bg-blue-100 after:h-[1px] uppercase;
-    @apply lg:mt-2;
+    &::after {
+      content: '';
+      height: 1px;
+      @apply absolute w-50 bg-blue-100 md:mt-7;
+    }
+    @apply lg:mt-2 lg:pl-25;
   }
 
 }
 
 .benefit-content {
-  @apply md:flex md:py-25 md:justify-between md:items-center md:flex-1 text-white; //nen  dung flex + paadding ?
+  @apply md:flex md:py-32 md:justify-center md:items-center md:flex-1 text-white; //nen  dung flex + paadding ?
   &-items {
-    &:not(:last-child) {
-      @apply md:pr-10;
-    }
-    @apply mt-20;
+    // &:not(:last-child) {
+    //   @apply md:pr-10;
+    // }
+    @apply md:px-15;
+    @apply mt-11;
 
   }
 
   .content-text {
     @apply font-sans w-100p leading-6 tracking-sp6 font-semibold;
-    @apply lg:max-w-340 lg:block;
+    @apply lg:max-w-340 lg:block md:font-normal leading-relaxed;
   }
 }

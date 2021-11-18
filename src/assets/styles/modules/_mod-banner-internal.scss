@@ -1,50 +1,49 @@
 
 .banner {
-  @apply bg-blue-400 relative z-1 w-100p py-25;
+  @apply bg-blue-400 relative z-1 w-100p;
   @apply lg:mt-30;
 
-  &::before {
-    content: "";
-    background-image: url('../../../assets/images/bk-CTA.png');
-    position: absolute;
-    z-index: 999;
-    left: 0;
-    bottom: -5%;
-    background-size: cover;
-    background-position: center bottom;
-    height: 90%;
-    width: 43.5%;
-    background-repeat: no-repeat;
-    margin-bottom: -50px;
-    @apply hidden;
-    @apply lg:block;
-  }
-  img {
-    @apply w-100p h-[300px] relative z-9999;
-    @apply lg:max-w-440 md:h-auto lg:-mt-50 2xl:ml-50;
-  }
+
   h1 {
     @apply text-white;
   }
   &-content {
-    @apply text-white  mx-auto px-25;
-    @apply lg:flex lg:justify-between;
+    @apply text-white  mx-auto;
+    @apply lg:flex lg:justify-between lg:items-center lg:py-40 lg:pl-63;
     &-title {
-      @apply pt-12 after:absolute after:w-50 after:bg-blue-100 after:h-[1px] uppercase;
+      &::after {
+        content: '';
+        @apply absolute w-50 bg-blue-100;
+        height: 1px;
+      }
+      @apply pt-12 uppercase;
       @apply md:max-w-540 md:w-full;
     }
 
     &-text {
-      @apply w-100p text-xs leading-normal;
-      @apply md:text-base xl:max-w-460 xl:w-full;
+      @apply w-100p text-xs leading-normal tracking-normal;
+      @apply md:text-2xl md:leading-text xl:max-w-600 xl:w-full;
     }
   }
   &-title {
-    @apply text-center text-white pt-22 pb-12;
+    @apply text-center text-white pt-19 pb-5;
   }
-
+  &-bg-image {
+    width: calc(93% + 10px);
+    @apply hidden;
+    @apply lg:block absolute z-a-2 -bottom-18p -left-50p h-92p pb-19p bg-center;
+  }
 }
 .banner-hide-mb {
   @apply hidden;
   @apply lg:text-blue-400 lg:my-50 lg:block;
+}
+.careers-img {
+   @apply w-100p relative;
+  img {
+    min-height: 413px;
+    margin-top: -300px;
+    @apply w-100p max-h-93 block;
+    @apply lg:max-w-440 lg:ml-68;
+  }
 }
