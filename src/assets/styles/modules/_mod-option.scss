@@ -13,14 +13,14 @@
     @apply text-2xl;
   }
   h3 {
-    @apply mb-2;
+    @apply mb-2 tracking-sp6;
   }
   h5 {
     @apply md:mb-0;
   }
 }
 .option-header {
-  @apply mb-3;
+  // @apply mb-3;
   .option-button {
     @apply flex;
   }
@@ -38,7 +38,7 @@
   }
 }
 .option-main {
-  @apply md:mt-32;
+  @apply mt-12 md:mt-32;
 }
 .option-items {
   @apply md:relative z-2;
@@ -53,7 +53,8 @@
     // lg:pt-24 lg:pb-24
   }
   .btn {
-    @apply mb-12 py-9 lg:px-29 lg:mb-0;
+    @apply py-7 mb-12;
+    @apply lg:px-29 lg:mb-0 lg:py-9;
     // lg:mt-14
   }
   .title-text {
@@ -63,9 +64,9 @@
     @apply hidden lg:max-w-180 lg:w-full lg:block;
   }
   .option-desc {
-    @apply font-sans text-base tracking-sp6 text-blue-400;
     @apply text-lg leading-normal tracking-sp6 lg:max-w-[800px] lg:w-full;
     &-text {
+      @apply font-sans text-base tracking-sp6 text-blue-400;
       @apply lg:mt-9;
     }
   }

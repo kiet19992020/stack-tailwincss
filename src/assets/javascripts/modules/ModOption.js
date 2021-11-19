@@ -22,6 +22,24 @@ const init = () => {
     $(this).parents().children('.option-desc').slideDown('fast')
   })
 
+  $(window).bind('scroll', function() {
+    var topbarHeight = $('.banner-stu').height() + 40
+    var bottomOffset = $('.topic-desc-text').offset().top
+    var set = $(window).scrollTop()
+
+      if ( set > topbarHeight) {
+        $('.topic-fixed').addClass('fixed')
+      }
+      else {
+        $('.topic-fixed').removeClass('fixed')
+      }
+      if ( set > bottomOffset) {
+        $('.topic-fixed').addClass('absolute')
+      }
+      else {
+        $('.topic-fixed').removeClass('absolute')
+      }
+});
 }
 const ModOption = (() => {
   if ($this.length) {

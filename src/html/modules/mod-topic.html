@@ -1,0 +1,76 @@
+<section class="mod-topic">
+    <div class="container mod-topic-inner relative lg:pt-17p lg:pl-70">
+      <div class="topic-content">
+          <div class="topic-contnet-title">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              </h3>
+          </div>
+          <div class="toppic-content-desc font-sans lg:leading-normal lg:mt-25 lg:tracking-sp6">
+              <p class="items-desc">
+                Phasellus vestibulum lorem sed risus. Feugiat in ante metus dictum at tempor.
+                Condimentum vitae sapien pellentesque habitant. Sem fringilla ut morbi tincidunt augue. Urna et pharetra pharetra massa.
+                 At tellus at urna condimentum mattis pellentesque. Amet tellus cras adipiscing enim eu turpis egestas.
+                 Condimentum vitae sapien pellentesque habitant morbi. Mauris rhoncus aenean vel elit. Sit amet mattis vulputate enim nulla aliquet porttitor lacus.
+               
+              </p >
+              <br>
+              <p class="items-desc">
+            Morbi leo urna molestie at. Nullam vehicula ipsum a arcu. Tincidunt arcu non sodales neque sodales ut etiam sit.
+            Porttitor rhoncus dolor purus non enim praesent. Integer malesuada nunc vel risus commodo viverra. Ullamcorper a lacus vestibulum sed arcu non. Tellus pellentesque eu tincidunt tortor. Nulla facilisi nullam vehicula ipsum a arcu cursus. Amet dictum sit amet justo donec enim diam vulputate ut. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Tincidunt vitae semper quis lectus nulla. Iaculis nunc sed augue lacus. Volutpat est velit egestas dui id ornare.
+              </p>
+          </div>
+      </div>
+      <div class="topic-position">
+        <div class="topic-fixed border-1 border-blue-200">
+            <div class="topic-fixed-book">
+              <div class="pb-8">
+                <img src="../../assets/images/whitepaper-icon.svg" class="h-40" alt="book-img">
+              </div>
+                <a href="javascript" class="btn-border-left">DOWNLOAD CASE STUDY</a>
+            </div>
+            <div class="topic-fixed-social">
+                <ul class="list-social">
+                  <li class="items-social">
+                    <a href="#" class="icomoon icon-twitter" ></a>
+                  </li>
+                  <li class="items-social">
+                    <a href="#" class="icomoon icon-linkedin2"></a>
+                  </li>
+                  <li class="items-social">
+                    <a href="#" class="icomoon icon-facebook"></a>
+                  </li>
+                </ul>
+                <div class="uppercase font-semibold text-white tracking-sp9 lg:pt-7">
+                  <p>share</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="topic-slide">
+        <div class="topic-slide-header lg:flex lg:justify-between">
+          <div class="slide-title">
+            <h4>RELATED RESOURCES</h4>
+          </div>
+          <div class="hidden lg:block">
+            <a href="javascript" class="btn-border-left hidden">VIEW ALL RESOURCES</a>
+          </div>
+        </div>
+        <div class="slide-main md:flex lg:pt-20 md:pt-5">
+          {% for item in [1,2,3] %}
+            <div class="topic-slide-items max-w-360">
+                  <div class="lazy topic-img" data-src="../../assets/images/Atlanta.jpg"></div>
+                <div class="topic-desc">
+                    <p class="topic-desc-title">topic</p>
+                    <div class="topic-desc-text">
+                        <p>
+                          Headline of Resource Goes Here and Continues on to Next Line and also the next
+                        </p>
+                    </div>
+                </div>
+            </div>
+          {% endfor%}
+        </div>
+      </div>
+    </div>
+</section>

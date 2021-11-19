@@ -8,7 +8,7 @@
     @apply text-white;
   }
   &-content {
-    @apply text-white  mx-auto;
+    @apply text-white  mx-auto px-26;
     @apply lg:flex lg:justify-between lg:items-center lg:py-40 lg:pl-63;
     &-title {
       &::after {
@@ -41,9 +41,7 @@
 .careers-img {
    @apply w-100p relative;
   img {
-    min-height: 413px;
-    margin-top: -300px;
-    @apply w-100p max-h-93 block;
-    @apply lg:max-w-440 lg:ml-68;
+    @apply w-100p max-h-93 block h-auto;
+    @apply  lg:-mt-53p lg:min-h-banner;
   }
 }

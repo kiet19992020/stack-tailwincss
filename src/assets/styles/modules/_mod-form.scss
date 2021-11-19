@@ -64,7 +64,6 @@
     @apply lg:my-28;
   }
   .btn {
-    min-width: 362px;
-    @apply md:pt-10;
+    @apply md:pt-10 md:min-w-[362px];
   }
 }
