@@ -23,7 +23,7 @@ const init = () => {
   })
 
   $(window).bind('scroll', function() {
-    var topbarHeight = $('.banner-stu').height() + 40
+    var topbarHeight = $('.banner-stu').height() + 200
     var bottomOffset = $('.topic-desc-text').offset().top
     var set = $(window).scrollTop()
 

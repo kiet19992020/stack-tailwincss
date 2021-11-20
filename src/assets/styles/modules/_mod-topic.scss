@@ -1,9 +1,9 @@
 .mod-topic  {
-  @apply relative z-2 lg:py-20;
+  @apply relative z-2 md:py-20;
 }
 .topic-position {
-  width: 488px;
-  @apply lg:absolute lg:-top-10p lg:right-0 z-1;
+  @apply w-full;
+  @apply lg:absolute lg:-top-10p lg:right-0 z-1 md:w-[488px];
 }
 .topic-content {
   max-width: 685px;
@@ -12,23 +12,24 @@
   @apply md:border-l-16 md:border-blue-100 md:flex;
   @apply md:max-w-480;
   &.fixed {
-    position: fixed;
-    top: 88px;
+    @apply relative;
+    @apply lg:fixed lg:top-44;
   }
   &.absolute {
-    position: absolute;
-    top: 88px;
+    @apply relative;
+    @apply lg:absolute lg:top-44;
   }
   &-book {
     @apply flex justify-center items-center py-10 flex-col bg-white;
-    @apply md:flex-col md:px-10 md:w-2/3;
+    @apply md:flex-col md:px-10 md:w-2/3 lg:py-9;
     img {
-      @apply py-5;
+      @apply mt-3 mb-6 h-28;
+      @apply md:h-40 md:py-5;
     }
   }
   &-social {
-    @apply bg-blue-500  w-full text-center py-5;
-    @apply md:flex-col md:px-10 md:h-full md:w-1/3 md:py-20;
+    @apply bg-blue-500  w-full text-center pb-2 pt-8;
+    @apply md:flex-col md:px-10 md:h-full md:w-1/3  md:py-15;
     .icomoon {
       font-size: 26px;
     }
@@ -42,7 +43,7 @@
 
 }
 .topic-slide {
-  @apply lg:mt-62;
+  @apply lg:mt-62 md:mt-30 mt-42;
   .slide-title {
     position: relative;
     &::after {
@@ -51,16 +52,17 @@
       height: 1px;
       @apply absolute w-50 bg-blue-100;
     }
+    @apply relative ml-10 md:ml-0;
   }
   &-header {
 
   }
   &-items {
-    @apply flex py-5 relative;
+    @apply flex py-6 relative;
     max-width: 372px;
     @apply md:flex-col md:border-1 md:border-blue-100 md:py-0 lg:w-1/3;
     &:not(:last-child) {
-      @apply lg:mr-10;
+      @apply md:mr-14;
     }
     &::after {
       content: '';
@@ -68,8 +70,8 @@
     }
   }
   .topic-img {
-    @apply h-72 w-1/2 bg-cover;
-    @apply lg:w-full lg:h-100;
+    @apply h-72 w-57p bg-cover;
+    @apply lg:min-h-img md:w-full;
   }
   .topic-desc {
     @apply w-1/2 pl-6;
@@ -79,6 +81,7 @@
     }
     &-text {
       @apply text-xs font-normal font-body text-blue-400 leading-normal;
+      @apply md:mb-20
     }
   }
 }
