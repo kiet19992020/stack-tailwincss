@@ -67,7 +67,7 @@
     @apply text-lg leading-normal tracking-sp6 lg:max-w-[800px] lg:w-full;
     &-text {
       @apply font-sans text-base tracking-sp6 text-blue-400;
-      @apply lg:mt-9;
+      @apply lg:mt-9 lg:font-semibold md:text-lg md:leading-normal;
     }
   }
 }

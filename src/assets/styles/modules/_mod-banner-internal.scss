@@ -9,7 +9,7 @@
   }
   &-content {
     @apply text-white  mx-auto px-26;
-    @apply lg:flex lg:justify-between lg:items-center lg:py-40 lg:pl-63;
+    @apply lg:flex lg:justify-between lg:items-center lg:py-40 lg:pl-28;
     &-title {
       &::after {
         content: '';
@@ -39,9 +39,9 @@
   @apply lg:text-blue-400 lg:my-50 lg:block;
 }
 .careers-img {
-   @apply w-100p relative;
+   @apply w-100p relative lg:left-64;
   img {
     @apply w-100p max-h-93 block h-auto;
-    @apply  lg:-mt-53p lg:min-h-banner;
+    @apply lg:-mt-50p md:min-h-imgbanner  md:max-w-440;
   }
 }

@@ -1,18 +1,18 @@
 .banner-stu {
-  @apply py-20 relative lg:pt-60 lg:pb-95;
+  // @apply py-20 relative lg:pt-60 lg:pb-95;
   &-title {
-    @apply relative z-2 py-20;
-    @apply md:text-left;
+    // @apply relative z-2 py-20;
+    // @apply md:text-left;
     h1 {
       @apply md:w-2/3 md:mt-7;
     }
     .bg-title {
-      @apply absolute w-full bg-no-repeat top-0 left-0 z-3 bg-center h-full;
+      // @apply absolute w-full bg-no-repeat top-0 left-0 z-3 bg-center h-full;
     }
   }
   &-inner {
-    @apply px-26;
-    @apply lg:pl-70;
+    // @apply px-26;
+    // @apply lg:pl-70;
   }
   h1 {
     @apply text-white md:w-2/3;
@@ -23,17 +23,18 @@
 
   .img-desktop {
     min-height: 472px;
-    @apply absolute lg:w-44p lg:-bottom-15p lg:min-h-banner bg-cover z-1 w-50p -bottom-30p;
+    // @apply absolute lg:w-44p lg:-bottom-15p lg:min-h-banner bg-cover z-1 w-50p -bottom-30p;
   }
 }
 
 .banner-stu-content {
-  @apply mt-3 md:mt-32;
+  // @apply mt-3 md:mt-32;
   h3 {
     @apply font-normal tracking-sp6;
+    @apply md:font-semibold;
   }
   .content-title {
-    @apply relative;
+    // @apply relative;
     &::before {
       content: '';
       @apply absolute z-2 opacity-40  bg-white -right-100vw left-0 md:-bottom-18 -bottom-7;
@@ -41,13 +42,13 @@
     }
   }
   .content-column {
-    @apply md:flex mt-20;
+    // @apply md:flex mt-20;
     &-desc {
-      @apply text-xs leading-text tracking-sp6 font-sans font-semibold;
-      @apply md:text-lg md:leading-relaxed md:pr-9 md:pb-100 md:max-w-460 md:font-normal lg:mr-41 lg:mt-17;
+      // @apply text-xs leading-text tracking-sp6 font-sans font-semibold;
+      // @apply md:text-lg md:leading-relaxed md:pr-9 md:pb-100 md:max-w-460 md:font-normal lg:mr-41 lg:mt-17;
     }
     &-impact {
-      @apply md:pl-23 lg:pt-12 mt-25 lg:mt-0 relative;
+      // @apply md:pl-23 lg:pt-12 mt-25 lg:mt-0 relative;
       &::before {
         content: '';
         width: 1px;
@@ -60,7 +61,7 @@
       }
     }
     .bg-desc {
-      @apply bg-cover w-full h-93;
+      // @apply bg-cover w-full h-93;
     }
   }
 }

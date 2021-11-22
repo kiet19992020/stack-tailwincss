@@ -3,7 +3,8 @@ const minHeight = {
   full: '100%',
   screen: '100vh',
   banner: '456px',
-  img: '251px'
+  img: '251px',
+  imgbanner: '420px'
 }
 module.exports = {
   minHeight

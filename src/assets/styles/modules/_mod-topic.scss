@@ -3,7 +3,7 @@
 }
 .topic-position {
   @apply w-full;
-  @apply lg:absolute lg:-top-10p lg:right-0 z-1 md:w-[488px];
+  @apply lg:absolute lg:-top-7p lg:right-9 z-1 md:max-w-480;
 }
 .topic-content {
   max-width: 685px;
@@ -81,7 +81,7 @@
     }
     &-text {
       @apply text-xs font-normal font-body text-blue-400 leading-normal;
-      @apply md:mb-20
+      @apply md:mb-20;
     }
   }
 }
