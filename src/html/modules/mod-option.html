@@ -21,10 +21,15 @@
               <div class=" hidden lg:max-w-180 lg:w-full lg:block">
                 <h5>{{ option.name }}</h5>
               </div>
+              {% if loop.first %}
+              <button class="btn-toggle transition duration-300 ease-in-out transform rotate-180" type="button">
+                <i class="icomoon icon-arrow_drop_down"></i>
+              </button>
+              {% else %}
               <button class="btn-toggle transition duration-300 ease-in-out" type="button">
                 <i class="icomoon icon-arrow_drop_down"></i>
               </button>
-
+              {% endif %}
               <div class="lg:my-24 hidden lg:block">
                 <button class="btn btn-outline-primary">aplly now</button>
               </div>
