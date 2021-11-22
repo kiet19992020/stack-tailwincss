@@ -1,47 +1,14 @@
 
 .banner {
-  @apply bg-blue-400 relative z-1 w-100p;
-  @apply lg:mt-30;
-
-
-  h1 {
-    @apply text-white;
-  }
-  &-content {
-    @apply text-white  mx-auto px-26;
-    @apply lg:flex lg:justify-between lg:items-center lg:py-40 lg:pl-28;
-    &-title {
-      &::after {
-        content: '';
-        @apply absolute w-50 bg-blue-100;
-        height: 1px;
-      }
-      @apply pt-12 uppercase;
-      @apply md:max-w-540 md:w-full;
-    }
-
-    &-text {
-      @apply w-100p text-xs leading-normal tracking-normal;
-      @apply md:text-2xl md:leading-text xl:max-w-600 xl:w-full;
-    }
-  }
-  &-title {
-    @apply text-center text-white pt-19 pb-5;
-  }
   &-bg-image {
     width: calc(93% + 10px);
-    @apply hidden;
-    @apply lg:block absolute z-a-2 -bottom-18p -left-50p h-92p pb-19p bg-center;
   }
 }
-.banner-hide-mb {
-  @apply hidden;
-  @apply lg:text-blue-400 lg:my-50 lg:block;
-}
-.careers-img {
-   @apply w-100p relative lg:left-64;
-  img {
-    @apply w-100p max-h-93 block h-auto;
-    @apply lg:-mt-50p md:min-h-imgbanner  md:max-w-440;
+
+.banner-content-title {
+  &::after {
+    content: '';
+    @apply absolute w-50 bg-blue-100;
+    height: 1px;
   }
 }

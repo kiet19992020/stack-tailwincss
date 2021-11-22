@@ -14,7 +14,8 @@ const letterSpacing = {
   'sp7': '-.17px',
   'sp8': '0.12px',
   'sp9': '0.17px',
-  'sp10': '0.19px'
+  'sp10': '0.19px',
+  'sp15': '0.61px'
 
 }
 module.exports = {

@@ -9,6 +9,7 @@ const lineHeight = {
   relaxed: '1.67',
   loose: '2',
   btn: '2.79',
+  h2: '1.14',
   3: '.75rem',
   4: '1rem',
   5: '1.25rem',

@@ -1,13 +1,9 @@
 .mod-option {
-  @apply relative z-1  pt-21 md:mt-35 lg:mt-9;
   .line-border {
     &::after {
       content: '';
-      @apply absolute z-2 -right-100vw -left-100vw h-[1px] bg-blue-100 mt-10;
+      @apply absolute z-2 -right-100vw -left-100vw h-px bg-blue-100 mt-10;
     }
-  }
-  .btn-toggle {
-    @apply transition duration-300 ease-in-out;
   }
   .icomoon {
     @apply text-2xl;
@@ -20,10 +16,6 @@
   }
 }
 .option-header {
-  // @apply mb-3;
-  .option-button {
-    @apply flex;
-  }
   .item-button {
     min-width: 166px;
     @apply border-1 px-5 py-7 cursor-pointer border-blue-100  text-xs font-semibold font-body bg-transparent text-center;
@@ -32,42 +24,15 @@
       @apply bg-blue-100 text-blue-50;
     }
   }
-
-  .option-title {
-    @apply lg:py-8;
-  }
-}
-.option-main {
-  @apply mt-12 md:mt-32;
 }
 .option-items {
-  @apply md:relative z-2;
   &::after {
     content: '';
-    @apply absolute z-3 right-0p w-100p left-0p h-[1px] bg-blue-100;
-  }
-
-  &-title {
-    @apply flex justify-between items-center mt-7;
-    @apply lg:mt-0;
-    // lg:pt-24 lg:pb-24
+    @apply absolute z-3 right-0p w-100p left-0p h-px bg-blue-100;
   }
   .btn {
     @apply py-7 mb-12;
     @apply lg:px-29 lg:mb-0 lg:py-9;
-    // lg:mt-14
   }
-  .title-text {
-    @apply lg:max-w-580 md:max-w-400 mt-8 md:mt-0 md:w-full;
-  }
-  .name-text {
-    @apply hidden lg:max-w-180 lg:w-full lg:block;
-  }
-  .option-desc {
-    @apply text-lg leading-normal tracking-sp6 lg:max-w-[800px] lg:w-full;
-    &-text {
-      @apply font-sans text-base tracking-sp6 text-blue-400;
-      @apply lg:mt-9 lg:font-semibold md:text-lg md:leading-normal;
-    }
-  }
+
 }
