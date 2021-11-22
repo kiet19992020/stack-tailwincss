@@ -5,23 +5,28 @@
   .topic-fixed {
     &.fixed {
       @apply relative;
-      @apply lg:fixed lg:top-44;
+      @apply lg:fixed lg:top-44 lg:w-100p;
+    }
+    &.relative {
+      @apply lg:relative lg:top-0;
     }
     &.absolute {
       @apply relative;
-      @apply lg:absolute lg:top-44;
+      @apply lg:z-9999 lg:absolute lg:w-100p lg:top-55vh;
     }
+
     &-social {
       .icomoon {
         font-size: 26px;
       }
       a {
-        @apply px-5;
+        @apply px-5 hover:text-white;
       }
     }
 
   }
   .topic-slide {
+
     .slide-title {
       &::after {
         content: '';
@@ -31,6 +36,7 @@
     }
     &-items {
       max-width: 372px;
+      overflow: hidden;
       &:not(:last-child) {
         @apply md:mr-14;
       }
