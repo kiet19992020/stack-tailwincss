@@ -18,6 +18,9 @@
 .option-header {
   .item-button {
     min-width: 166px;
+    &:not(:first-child) {
+      @apply border-l-0;
+    }
     @apply border-1 px-5 py-7 cursor-pointer border-blue-100  text-xs font-semibold font-body bg-transparent text-center;
     @apply lg:px-15 lg:py-7 md:text-xl md:font-semibold md:leading-tight200 md:tracking-normal;
     &.active {
