@@ -5,12 +5,13 @@
         <h6>OPEN POSITIONS</h6>
       </div>
         <div class="flex">
-          <a class="item-button active">ALL LOCATIONS</a>
-          <a class="item-button">ALL DEPARTMENTS</a>
+          <a class="item-button active" target="1">ALL LOCATIONS</a>
+          <a class="item-button" target="2">ALL DEPARTMENTS</a>
+          <a class="item-button" target="3">ALL DEPARTMENTS</a>
         </div>
     </div>
     <div class="line-border"></div>
-    <div class="option-main  mt-12 md:mt-32">
+    <div id="show1" target="1" class="option-main mt-12 md:mt-32">
         {% for option in options %}
         <div class="option-items md:relative z-2">
           <div class="option-items-title flex justify-between items-center mt-7 lg:mt-0">
@@ -20,7 +21,7 @@
               <div class=" hidden lg:max-w-180 lg:w-full lg:block">
                 <h5>{{ option.name }}</h5>
               </div>
-              <button class="transition duration-300 ease-in-out" type="button">
+              <button class="btn-toggle transition duration-300 ease-in-out" type="button">
                 <i class="icomoon icon-arrow_drop_down"></i>
               </button>
               {% if loop.first %}
@@ -32,13 +33,12 @@
                 <button class="btn btn-outline-primary">aplly now</button>
               </div>
               {% endif %}
-
           </div>
           <div class="lg:hidden block">
             <h5>{{ option.name }}</h5>
           </div>
           {% if loop.first %}
-              <div class="text-lg leading-normal tracking-sp6 lg:max-w-[800px] lg:w-full">
+              <div class="option-desc text-lg leading-normal tracking-sp6 lg:max-w-800 lg:w-full">
                 <div class="font-sans text-base tracking-sp6 text-blue-400
                 lg:mt-9 lg:font-semibold md:text-lg md:leading-normal">
                   <p>{{ option.desc }}</p>
@@ -48,8 +48,9 @@
                   </div>
                 </div>
           {% else %}
-          <div class="option-desc hidden">
-            <div class="option-desc-text">
+          <div class="option-desc text-lg leading-normal tracking-sp6 lg:max-w-800px lg:w-full hidden">
+            <div class="ont-sans text-base tracking-sp6 text-blue-400
+            lg:mt-9 lg:font-semibold md:text-lg md:leading-normal">
               <p>{{ option.desc }}</p>
             </div>
               <div class="mb-10 mt-4">
@@ -63,5 +64,15 @@
         </div>
         {%endfor%}
     </div>
+    <div id="show2" target="2" class="option-main mt-12 md:mt-32 hidden">
+      <div>
+        <h1>tab 2</h1>
+      </div>
+  </div>
+  <div id="show3" target="3" class="option-main mt-12 md:mt-32 hidden">
+    <div>
+      <h1>tab 3</h1>
+    </div>
+</div>
   </div>
 </section>

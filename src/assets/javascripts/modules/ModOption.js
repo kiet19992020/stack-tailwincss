@@ -2,18 +2,15 @@ const $this = $('.mod-option')
 
 const init = () => {
 
-  // $('.btn-toggle').click(function(e) {
-
-  //   $('.option-items').not(content).slideUp()
-  //   $(this).toggleClass('transform rotate-180')
-  //   content.slideToggle()
-  // })
-
   var content = $('.option-desc')
   $('.item-button').on('click', function(e) {
     $('.item-button').removeClass('active')
     $(this).addClass('active')
+    $('.option-main').hide()
+    $('#show' + $(this).attr('target')).show()
   })
+
+
   $('.btn-toggle').on('click', function(e) {
     content.slideUp()
 
@@ -24,7 +21,7 @@ const init = () => {
 
   $(window).bind('scroll', function() {
     var topbarHeight = $('.banner-stu').height() + 200
-    var bottomOffset = $('.topic-desc-text').offset().top
+    var bottomOffset = $('.toppic-content-desc').offset().top + 120
     var set = $(window).scrollTop()
 
       if ( set > topbarHeight) {
