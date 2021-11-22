@@ -7,12 +7,9 @@
       @apply relative;
       @apply lg:fixed lg:top-44 lg:w-100p;
     }
-    &.relative {
-      @apply lg:relative lg:top-0;
-    }
     &.absolute {
       @apply relative;
-      @apply lg:z-9999 lg:absolute lg:w-100p lg:top-55vh;
+      @apply lg:z-9999 lg:absolute lg:w-100p;
     }
 
     &-social {

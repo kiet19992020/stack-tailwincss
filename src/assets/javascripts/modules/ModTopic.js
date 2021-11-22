@@ -1,3 +1,4 @@
+
 export default class ModTopic {
   constructor () {
     this.$fixed = $('.mod-topic')
@@ -12,6 +13,7 @@ export default class ModTopic {
     $(window).bind('scroll', () => {
       let topbarHeight = $('.banner-stu').height() + 220
       let bottomOffset = $('.toppic-content-desc').offset().top + 100
+      let height = bottomOffset - topbarHeight - 30
       let set = $(window).scrollTop()
 
         if (set > topbarHeight) {
@@ -20,10 +22,10 @@ export default class ModTopic {
           $(this.clsTopic).removeClass('fixed')
         }
         if (set > bottomOffset) {
-          $(this.clsTopic).addClass('absolute')
+          $(this.clsTopic).addClass('absolute').css({'top': height})
         }
         else {
-          $(this.clsTopic).removeClass('absolute')
+          $(this.clsTopic).removeClass('absolute').css({'top': '88px'})
         }
     })
   }
